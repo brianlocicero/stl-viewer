@@ -1,0 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<title>3D Interface</title>
+	<meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/screen.css" />
+	<link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<div class="main">
+
+		<!-- 3d model view -->
+		<div class="model">
+
+			<div class="sceneHolder" id="sceneHolder">
+			</div>
+
+		</div>
+
+		<div class="output">
+				<span style="font-weight:bold">Zoom:</span> <span style="font-style:italic">Pinch, Tap or Double-Click</span> | 
+				<span style="font-weight:bold">Rotate:</span> <span style="font-style:italic">Touch or Click & Drag</span> |
+				<span style="font-weight:bold">Scale:</span> <input type="text" value="1" name="scaleValue" id="scaleValue" style="width:25px"/>&nbsp;&nbsp;<input type="range" min=".1" max="3" step=".1" value="1" name="scaleSlider" oninput="javascript:onSliderChange()" id="scaleSlider"/> | <!--<input type="submit" value="Export" name="exportButton" id="exportButton" onclick="javascript:exportSTL()"/>-->
+		</div>
+
+	</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/hammer.min.js"></script>
+<script src="js/THREE2STL.js"></script>
+<script src="js/three.js"></script>
+<script src="js/STLLoader.js"></script>
+<script src="js/geometry.js"></script>
+<script src="js/app.js"></script>
+
+</body>
+</html>
